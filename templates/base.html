@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    {% block content %}
+    <h1>{{survey.title}}</h1>
+    <p>{{survey.instructions}}</p>
+    <form action="/questions/0">
+        <input type="submit" value="Submit">
+    </form>
+    {% endblock %}
+</body>
+</html>
